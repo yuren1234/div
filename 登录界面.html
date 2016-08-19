@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+       h2,div{
+           text-align: center;
+           padding-top:5px ;
+            }
+
+      #kuang2{
+          margin-left: 14px;
+      }
+        #denglu{margin-left: 140px;}
+
+    </style>
+</head>
+<body>
+
+<h2>登录界面</h2>
+<div>
+    <div id="kuang1">
+ <span>用户名</span> <input  id='neikuang1' type="text" onfocus="xiaoshi('neikuang1')" onblur="xiaoshi2('neikuang1')">
+        <span id="xing1">*</span>
+    </div>
+<br>
+     <div id="kuang2">
+ <span>密码</span> <input    id="neikuang2" type="text" onfocus="xiaoshi('neikuang2')"  onblur="xiaoshi2('neikuang2')">
+         <span id="xing2">*</span>
+     </div>
+     <br>
+   <input id="denglu" type="button" value="登录" onclick="tan()">
+</div>
+
+<script  type=application/javascript>
+    var zhi1= document.getElementById('neikuang1');
+    var zhi2=document.getElementById('neikuang2');
+      function tan(){
+    if(zhi1.value!=''&&zhi2.value!=''){
+
+      alert('恭喜你，输入成功')}{
+        alert('请输入正确的值')
+      }
+    }
+    var xing_a1=document.getElementById('xing1');
+    var xing_a2=document.getElementById('xing2');
+
+    function xiaoshi(index){
+        var shu_xing=document.getElementById(index);
+
+        shu_xing.style.fontSize='large';
+          xing_a1.innerHTML='*';
+
+    }
+
+
+
+    function xiaoshi2(suoyi){
+        var shu_xing=document.getElementById(suoyi);
+
+        shu_xing.style.fontSize='smaller';
+
+    }
+
+
+</script>
+</body>
+</html>
