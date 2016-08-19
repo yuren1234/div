@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"  style="height: 30px"  id="a" onfocus="kuang('a')">
+<span id="txt1" >+</span>
+<input type="text"  style="height: 30px"   id="b" onfocus="kuang('b')">
+=
+<input type="text"  style="height: 30px"   id="c" onfocus="kuang('c')">
+<input type="button" value="计算" onclick="jisuan()">
+<br>
+<input type="button"value="+"    onclick="shijian1()">
+<input type="button"value="-"    onclick="shijian2()">
+<input type="button"value="*"    onclick="shijian3()">
+<input type="button"value="/"    onclick="shijian4()">
+
+<script type="application/javascript">
+       function kuang(index){
+           var   xiaochu=document.getElementById(index);
+                 xiaochu.value=null;}
+
+
+         function shijian1(){
+         var jia=document.getElementById('txt1');
+
+           jia.innerHTML='+';}
+
+         function shijian2(){
+        var jia=document.getElementById('txt1')
+        jia.innerHTML='-'}
+
+    function shijian3(){
+        var jia=document.getElementById('txt1')
+        jia.innerHTML='*'}
+
+       function shijian4(){
+           var jia=document.getElementById('txt1')
+           jia.innerHTML='/'}
+
+      function jisuan( ){
+          var jisuan_shuzi1=document.getElementById('a');
+          var jisuan_shuzi2=document.getElementById('b');
+          var jisuan_shuzi3=document.getElementById('c');
+
+          var shuzi1= parseInt(jisuan_shuzi1.value);
+          var shuzi2= parseInt(jisuan_shuzi2.value);
+          var shuzi3= parseInt(jisuan_shuzi3.value);
+
+
+      }
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
